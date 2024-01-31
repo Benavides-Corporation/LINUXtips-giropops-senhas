@@ -4,7 +4,7 @@
 Criar e otimizar uma aplicação Kubernetes segura e eficiente, utilizando o projeto giropops-senhas como base. O foco está em práticas de segurança, eficiência de recursos, monitoramento e automação.
 
 ## Pré-requisitos
-Para um correto funcionamento é preciso que as ferramentas já tenham sido instaladas
+Para um correto funcionamento é preciso que as ferramentas já tenham sido instaladas.
 
 - **python version 3.8+**
 sudo apt-get install software-properties-common
