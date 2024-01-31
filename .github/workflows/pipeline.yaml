@@ -1,5 +1,5 @@
 ---
-name: CI/CD - Integração e Entrega Contínuass
+name: CI/CD - Integração e Entrega Contínuas
 
 on:
   push:
