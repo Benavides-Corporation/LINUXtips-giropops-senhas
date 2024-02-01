@@ -89,7 +89,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: gi-runner-1 #ubuntu-latest
+    runs-on: gi-runner-1 
     steps:
       -
         name: Checkout do repositório
@@ -102,9 +102,9 @@ jobs:
           config: "${{ github.workspace }}/k8s/cluster.yaml"
           node_image: "kindest/node:v1.27.3@sha256:3966ac761ae0136263ffdb6cfd4db23ef8a83cba8a463690e98317add2c9ba72"
           cluster_name: "giropops"
-          kubectl_version: "v1.28.2"                    
+          kubectl_version: "v1.29.1"                    
       - 
-        name: Sleep de 30 segundos aguardando status READY para worker nodes
+        name: Sleep de 300 segundos aguardando status READY para worker nodes
         run: |
           sleep 300
       - 
@@ -138,7 +138,7 @@ jobs:
         run: |
           kubectl apply -f ${{ github.workspace }}/k8s/giropops-senhas-svc.yaml -n dev
       - 
-        name: Sleep de 60 segundos aguardando status READY para os pods
+        name: Sleep de 300 segundos aguardando status READY para os pods
         run: |
           sleep 300      
       - 
