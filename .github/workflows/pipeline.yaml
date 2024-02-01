@@ -11,7 +11,7 @@ on:
 
 jobs:
   linters:    
-    runs-on: ubuntu-latest
+    runs-on: gi-runner-1 #ubuntu-latest
     steps:
       - 
         name: Checkout do repositório
@@ -36,7 +36,7 @@ jobs:
  
   build:
     needs: linters
-    runs-on: ubuntu-latest
+    runs-on: gi-runner-1 #ubuntu-latest
     steps:
       -
         name: Checkout do repositório
@@ -89,7 +89,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: gi-runner-1 #ubuntu-latest
     steps:
       -
         name: Checkout do repositório
