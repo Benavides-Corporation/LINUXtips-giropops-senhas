@@ -106,7 +106,7 @@ jobs:
       - 
         name: Sleep de 30 segundos aguardando status READY para worker nodes
         run: |
-          sleep 30
+          sleep 300
       - 
         name: Verificando informações do cluster
         run: |
@@ -140,7 +140,7 @@ jobs:
       - 
         name: Sleep de 60 segundos aguardando status READY para os pods
         run: |
-          sleep 60      
+          sleep 300      
       - 
         name: Listagem dos Pods
         run: |
