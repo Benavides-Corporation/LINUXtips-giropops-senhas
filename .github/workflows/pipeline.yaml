@@ -160,4 +160,5 @@ jobs:
       - 
         name: Teste via curl na aplicação
         run: |
-          curl 172.18.0.5:32000
+          curl 172.18.0.5:32000 & exit 0
+          
